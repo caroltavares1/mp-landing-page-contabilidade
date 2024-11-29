@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Solway:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 :root {
   --background: #000;
@@ -26,9 +26,9 @@ header {
   justify-content: flex-start;
   align-items: space-between;
   width: 100vw;
-  height: 100vh;
+  height: 1034px;
   padding: 20px 100px;
-  background: var(--background) url("../imagens/banner.svg") no-repeat top/cover;
+  background: var(--background) url("../imagens/banner.svg") no-repeat center/cover;
 }
 
 header #header-topo {
@@ -44,6 +44,7 @@ header #apresentacao {
   align-items: center;
   justify-content: center;
   height: 750px;
+  padding: 10px;
 }
 
 #apresentacao h1 {
@@ -56,9 +57,108 @@ header #apresentacao {
   font-size: 3.2rem;
 }
 
-ul {
+header ul {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
   font-size: 2rem;
+}
+
+main .container {
+  margin-top: 20rem;
+  padding: 46px;
+}
+
+#perfil {
+  display: flex;
+  justify-content: space-between;
+  gap: 6.8rem;
+}
+
+#perfil-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+#perfil-texto p {
+  font-family: "Inter", sans-serif;
+  color: var(--secondaryText);
+  width: 569px;
+  font-size: 30px;
+  font-weight: light;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  background-color: var(--buttons);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 284px;
+  height: 74px;
+  font-size: 30px;
+  border-radius: 2px;
+}
+#servicos {
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10.3rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#servicos-container {
+  display: flex;
+  gap: 10rem;
+  justify-content: space-between;
+  align-items: center;
+}
+#servicos-container img {
+  display: flex;
+  margin-top: 15rem;
+  align-self: flex-start;
+}
+
+#listas-container {
+  display: flex;
+  gap: 2rem;
+}
+
+#lista-numeros {
+  font-size: 6rem; /* Ajuste o tamanho conforme necessário */
+  color: var(--buttons); /* Personalize a cor */
+  font-weight: bold; /* Deixe os números em negrito */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 13rem;
+}
+
+#lista-texto {
+  max-width: 451px;
+  width: 451px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8rem;
+}
+
+.titulo {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 4.7rem;
+}
+
+.descricao {
+  font-family: "Inter", sans-serif;
+  font-weight: light;
+  font-size: 2.5rem;
+  color: var(--secondaryText);
 }
