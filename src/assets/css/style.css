@@ -73,6 +73,7 @@ main .container {
   display: flex;
   justify-content: space-between;
   gap: 6.8rem;
+  margin: 0 7rem;
 }
 
 #perfil-texto {
@@ -81,7 +82,7 @@ main .container {
   gap: 4rem;
 }
 
-h1 {
+h2 {
   font-size: 64px;
   font-weight: bold;
 }
@@ -104,9 +105,11 @@ button {
   height: 74px;
   font-size: 30px;
   border-radius: 2px;
+  cursor: pointer;
 }
 #servicos {
   margin-top: 20rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
   gap: 10.3rem;
@@ -161,4 +164,123 @@ button {
   font-weight: light;
   font-size: 2.5rem;
   color: var(--secondaryText);
+}
+
+#clientes {
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.3rem;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--text);
+  width: 100vw;
+  height: 917px;
+  padding-top: 10rem;
+}
+
+#clientes h2 {
+  color: var(--background);
+  font-size: 7rem;
+}
+
+#clientes > p {
+  color: var(--secondaryText);
+  font-size: 3.2rem;
+  margin: 0 8rem;
+  text-align: center;
+}
+
+#cards-container {
+  display: flex;
+  gap: 5rem;
+}
+
+.card {
+  background-color: var(--background);
+  width: 368px;
+  height: 343px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card p {
+  color: var(--text);
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+}
+#quote h2 {
+  margin: 0 3rem;
+  text-align: center;
+}
+#quote p {
+  color: var(--secondaryText);
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+}
+
+#contato-container {
+  display: flex;
+  align-self: center;
+  align-items: space-between;
+  gap: 6rem;
+}
+
+#contato-lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#contato-lista h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#contato-lista p {
+  color: var(--secondaryText);
+  font-size: 25px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 3rem;
+  padding: 15px;
+}
+
+footer ul {
+  display: flex;
+  gap: 2rem;
+}
+
+footer p {
+  color: var(--secondaryText);
+}
+
+button:hover {
+  background-color: #dd8323;
+  transform: scale(1.05);
 }
